@@ -13,7 +13,7 @@ console.log("Exercise One"); // Do not modify the lines like this before each ex
 //
 // Write your code here 👇
 
-for (let index = 0; index < 2; index++) {
+for (let index = 0; index < 10; index++) {
   console.log(index);
 }
 
@@ -26,6 +26,9 @@ console.log("Exercise Two");
 //
 // Write your code here 👇
 
+for (let index = 1; index < 21; index++) {
+  console.log(index);
+}
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Three");
@@ -36,7 +39,9 @@ console.log("Exercise Three");
 //
 // Write your code here 👇
 
-
+for (let index = 2; index < 21; index+=2) {
+  console.log(index);
+}
 
 // ----------------------------------------------------------------------------------------------
 // The following exercises will use the numbers array below
@@ -50,7 +55,9 @@ console.log("Exercise Four");
 //
 // Write your code here 👇
 
-
+for (let index = 0; index < numbers.length; index++) {
+  console.log(numbers[index]);
+}
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Five");
@@ -60,6 +67,11 @@ console.log("Exercise Five");
 //
 // Write your code here 👇
 
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] < 20){
+    console.log(numbers[index])
+  }
+}
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Six");
@@ -70,6 +82,11 @@ console.log("Exercise Six");
 //
 // Write your code here 👇
 
+let product=1
+for (let index = 0; index < numbers.length; index++) {
+  product = product * numbers[index]
+}
+console.log(product)
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Seven");
@@ -80,6 +97,14 @@ console.log("Exercise Seven");
 //
 // Write your code here 👇
 
+let largestNumber = 0
+for (let index = 0; index < numbers.length; index++) {
+  let currentNumber = numbers[index]
+  if (currentNumber > largestNumber){
+    largestNumber = currentNumber
+  }
+}
+console.log(largestNumber)
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Eight");
@@ -89,7 +114,13 @@ console.log("Exercise Eight");
 //
 // Write your code here 👇
 
-
+let largeArray = []
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] >= 10){
+    largeArray.push(numbers[index])
+  }
+}
+console.log(largeArray)
 
 // When you are done with all of the exercises, check your console output to make sure it
 // matches the expected output of each exercise and remove any extranneous console.log()
